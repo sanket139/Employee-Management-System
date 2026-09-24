@@ -1,0 +1,80 @@
+:root {
+  --ems-primary: #2c3e6b;
+  --ems-primary-dark: #1e2b4d;
+  --ems-accent: #3f8efc;
+  --ems-bg: #f4f6fb;
+}
+
+body {
+  background-color: var(--ems-bg);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ems-sidebar {
+  min-height: 100vh;
+  background: var(--ems-primary-dark);
+  color: #fff;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.ems-sidebar .nav-link {
+  color: #cfd8ef;
+  border-radius: 8px;
+  margin: 2px 8px;
+  padding: 10px 14px;
+}
+
+.ems-sidebar .nav-link.active,
+.ems-sidebar .nav-link:hover {
+  background-color: var(--ems-accent);
+  color: #fff;
+}
+
+.ems-topbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.ems-content {
+  flex: 1;
+  min-height: 100vh;
+}
+
+.ems-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.06);
+}
+
+.ems-stat-card {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.06);
+}
+
+.table-actions button {
+  margin-right: 4px;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--ems-primary) 0%, var(--ems-accent) 100%);
+}
+
+.auth-card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.badge-status-active {
+  background-color: #1e9e5a;
+}
+
+.badge-status-inactive {
+  background-color: #9aa1ad;
+}
